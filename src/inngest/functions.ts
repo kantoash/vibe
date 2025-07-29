@@ -6,7 +6,7 @@ export const helloWorld = inngest.createFunction(
     async ({ event, step }) => {
         await step.sleep("waiting for 1 second", "1s" );
         return {
-            message: `Hello world ${event.data.email}`
+            message: `Hello world email ${event.data.email}`
         }
     }
 )
